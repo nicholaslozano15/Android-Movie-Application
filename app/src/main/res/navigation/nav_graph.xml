@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contentPage">
+
+    <fragment
+        android:id="@+id/detailView"
+        android:name="com.example.nicholaslozano.movieapplication.DetailView"
+        android:label="fragment_detail_view"
+        tools:layout="@layout/fragment_detail_view"></fragment>
+    <fragment
+        android:id="@+id/contentPage"
+        android:name="com.example.nicholaslozano.movieapplication.ContentPageFragment.ContentPage"
+        android:label="fragment_content_page">
+        <action
+            android:id="@+id/action_contentPage_to_detailView"
+            app:destination="@id/detailView"
+            app:popUpTo="@+id/contentPage" />
+    </fragment>
+</navigation>
