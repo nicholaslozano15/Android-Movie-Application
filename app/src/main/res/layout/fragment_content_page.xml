@@ -6,7 +6,6 @@
     android:background="#111"
     tools:context=".ContentPageFragment.ContentPage">
 
-    <!-- TODO: Update blank fragment layout -->
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/content_recyclerview"
